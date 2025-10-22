@@ -98,11 +98,13 @@ class neuralNetwork:
 
 if __name__ == "__main__":
 
-    train_path = "D:\\Programming\\AI_developing\\Projects\\SSIP_Projects\\Handwritten Digit Recognize\\MNIST Dataset\\mnist_train.csv"
-    test_path = "D:\\Programming\\AI_developing\\Projects\\SSIP_Projects\\Handwritten Digit Recognize\\MNIST Dataset\\mnist_test.csv"
+    # path where dataset located
+    train_path = "mnist_train.csv"
+    test_path = "mnist_test.csv"
 
-    whoPath = "D:\\Programming\\AI_developing\\Projects\\Image_Recognizer_test\\who.npy"
-    wihPath = "D:\\Programming\\AI_developing\\Projects\\Image_Recognizer_test\\wih.npy"
+    # path where you want to save weights
+    whoPath = "who.npy"
+    wihPath = "wih.npy"
 
     # assining input_nodes, hidden_nodes, output_nodes, learning_rate and no. of iterations
     learningRate = 0.1
@@ -245,5 +247,6 @@ if __name__ == "__main__":
             reverseArray[i] = 0.99
             handwritten.test(1, wih, who, True, reverseArray)
             reverseArray[i] = 0.01
+
 
     reverse()
