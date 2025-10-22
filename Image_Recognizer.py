@@ -248,5 +248,7 @@ if __name__ == "__main__":
             handwritten.test(1, wih, who, True, reverseArray)
             reverseArray[i] = 0.01
 
+    # reverse technique
+    # reverse()
 
-    reverse()
+    canvas()
